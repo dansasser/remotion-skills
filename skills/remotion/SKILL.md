@@ -68,8 +68,8 @@ All videos should have animated subtitles with word highlighting. Follow this se
 
 Load [./rules/subtitles.md](./rules/subtitles.md) for technical details on the Caption type, transcription, and display components.
 
-### Step 6: Render and deliver
-Preview may be jerky with heavy compositions — always render to verify. Use `gws drive files create --upload` to push to Google Drive.
+### Step 6: Preview
+Launch Remotion Studio (`npx remotion studio`) if it isn't already running so the user can review in the browser. Do not render or deliver unless the prompt or the user says to.
 
 ## Using FFmpeg
 
