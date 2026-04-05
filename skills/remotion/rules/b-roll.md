@@ -7,13 +7,9 @@ metadata:
 
 ## When to use b-roll
 
-B-roll is a **background layer** behind content scenes — not a replacement for them. Use it behind:
+B-roll is a **background layer** behind any scene. It adds depth and motion regardless of what the foreground content does — text, charts, animated SVG diagrams, product demos, anything. The foreground code design and the background b-roll are independent layers.
 
-- Text-heavy scenes (titles, bullet points, quotes)
-- Chart and graph overlays (bar charts, line graphs, data visualizations)
-- Voiceover segments where the visual is otherwise static
-
-Not every scene needs b-roll. Aim for **~2 b-roll clips per 30 seconds** of video. Scenes with their own designed visuals (animations, product shots, demos) don't need it.
+Aim for **~2 b-roll clips per 30 seconds** of video. Not every scene needs it, but any scene CAN have it.
 
 ## How to generate b-roll
 
