@@ -17,13 +17,24 @@ Before implementing any scenes, follow this sequence.
 
 ### Content safe zone (default)
 
-All content (text, graphics, overlays — NOT captions) must be **centered vertically and horizontally**, building outward from dead center. This is the default for all compositions unless explicitly overridden.
+All main content (headlines, key text, CTAs, stats, graphics) must be **centered vertically and horizontally**, building outward from dead center. This is the default unless explicitly overridden.
 
-- **Portrait (9:16):** Content safe zone is the middle ~40% of the frame (roughly top 30% to bottom 30% are unsafe). Portrait video has UI chrome — status bar at top, app controls and caption area at bottom. Nothing important should live in those zones.
-- **Landscape (16:9):** Full frame is usable, no safe zone restriction.
-- **Captions** are the exception — they sit in the lower third by design.
+B-roll, backgrounds, decorative elements, and captions are NOT restricted to the safe zone — they fill the full frame.
 
-If the prompt doesn't specify landscape, default to portrait (9:16) with safe zone rules.
+If the prompt doesn't specify landscape, default to portrait (9:16).
+
+**Portrait (9:16) — 1080x1920 canvas:**
+
+Universal cross-platform safe zone (works on TikTok, Reels, and Shorts):
+- **Top:** 210px (status bar, search, platform header)
+- **Bottom:** 320px (action buttons, captions, CTA overlays)
+- **Left:** 60px
+- **Right:** 120px (action icons on TikTok/Reels)
+- **Safe area:** 900x1400px centered
+
+Platform UI is updated frequently — these values are current as of early 2026.
+
+**Landscape (16:9):** Full frame is usable, no safe zone restriction.
 
 ### Step 1: Composition structure
 Each composition gets its own directories:
