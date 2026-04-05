@@ -15,6 +15,16 @@ Before implementing any scenes, follow this sequence.
 
 **API keys** (ElevenLabs, Krea, etc.) are already configured in the project. Check existing scripts and .env files for how they're loaded before asking the user.
 
+### Content safe zone (default)
+
+All content (text, graphics, overlays — NOT captions) must be **centered vertically and horizontally**, building outward from dead center. This is the default for all compositions unless explicitly overridden.
+
+- **Portrait (9:16):** Content safe zone is the middle ~40% of the frame (roughly top 30% to bottom 30% are unsafe). Portrait video has UI chrome — status bar at top, app controls and caption area at bottom. Nothing important should live in those zones.
+- **Landscape (16:9):** Full frame is usable, no safe zone restriction.
+- **Captions** are the exception — they sit in the lower third by design.
+
+If the prompt doesn't specify landscape, default to portrait (9:16) with safe zone rules.
+
 ### Step 1: Composition structure
 Each composition gets its own directories:
 - `public/<name>/voiceover/` — audio files
