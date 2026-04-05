@@ -68,16 +68,7 @@ All videos should have animated subtitles with word highlighting. Follow this se
 
 Load [./rules/subtitles.md](./rules/subtitles.md) for technical details on the Caption type, transcription, and display components.
 
-### Step 6: Thumbnail
-Generate a thumbnail using a `<Still>` composition registered alongside the video composition in Root.tsx.
-
-- **Size:** 1280x720 (16:9 landscape) — this is different from the video aspect ratio
-- **Format:** Render as PNG
-- **Design:** Match the video's visual style — same colors, fonts, key headline. Should look like the most compelling frame of the video.
-- **Safe area:** Keep text within center 960x540 — YouTube's duration overlay covers the bottom-right corner
-- **Render:** `npx remotion still <StillId> out/<name>-thumbnail.png`
-
-### Step 7: Preview
+### Step 6: Preview
 Launch Remotion Studio (`npx remotion studio`) if it isn't already running so the user can review in the browser. Do not render or deliver unless the prompt or the user says to.
 
 ## Using FFmpeg
